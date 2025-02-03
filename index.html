@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./style.css">
+    
+</head>
+<body>
+    <div class="container">
+        <input class="first-name name" type="text" placeholder="first name">
+        <input class="last-name name" type="text" placeholder="last name">
+        <button>Submit</button>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.7.1.js" integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4=" crossorigin="anonymous"></script>
+    <script>
+       $("button").click(function(){
+        if($(".name").val()===""){
+        alert("the field are mendatory to be filled")
+       }
+       })
+    </script>
+</body>
+</html>
